@@ -27,7 +27,7 @@ internal static class JavascriptIsolationExtensions
     }
     internal static Lazy<Task<IJSObjectReference>> GetLibraryModuleTask(this IJSRuntime js, string javascriptfile)
     {
-        return js.GetModuleTask($"./_content/BasicBlazorLibrary/{GetJsName(javascriptfile)}");
+        return js.GetModuleTask($"./_content/YouTubeBlazorLibrary/{GetJsName(javascriptfile)}");
     }
     private static Lazy<Task<IJSObjectReference>> GetModuleTask(this IJSRuntime js, string fullPath)
     {
