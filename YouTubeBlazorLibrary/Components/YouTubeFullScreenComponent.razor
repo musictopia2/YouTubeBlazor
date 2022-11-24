@@ -1,0 +1,8 @@
+﻿@inherits YouTubeComponentBase
+<ShellComponent UseGrid=true
+    Visible="@Visible">
+    <IFrameComponent />
+    <div @ref=_bottomElement>
+        @ChildContent
+    </div>
+</ShellComponent>
