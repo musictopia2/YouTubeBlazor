@@ -18,6 +18,7 @@ internal class YouTubeService : BaseStandardJavascriptClass
             _didInit = true;
         }
         _skips = skips;
+        _skips.KeepConditionalItems(x => x.StartTime > startat);
         await ModuleTask.InvokeVoidFromClassAsync("loadVideo", videoId, startat, endat, height, width);
         if (_time is not null)
         {
