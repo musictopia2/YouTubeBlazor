@@ -15,7 +15,7 @@
     <Using Remove="System.Threading" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="CommonBasicLibraries" Version="10.0.1" />
+    <PackageReference Include="CommonBasicLibraries" Version="10.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
